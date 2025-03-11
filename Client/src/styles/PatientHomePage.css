@@ -1,0 +1,151 @@
+/* Patient Home Page */
+.patient-home-page {
+  background-image: url(../assets/images/Patient-Home-Page-img/bg-img.png);
+  background-repeat: no-repeat;
+  background-size: 35%;
+  background-position-y: top;
+  background-position-x: 250px;
+  max-width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-content {
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  color: #0e384c;
+}
+
+.hero h2 span {
+  color: #1e84b5;
+}
+
+.hero p {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #666;
+}
+
+.hero .hero-btn {
+  display: inline-flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  background-color: #1e84b5;
+  font-weight: 700;
+  font-family: "poppins", sans-serif;
+  font-size: 16px;
+  padding: 10px 10px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  text-decoration: none;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  -webkit-transition: background-color 0.3s ease;
+  -moz-transition: background-color 0.3s ease;
+  -ms-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+}
+
+.hero .hero-btn:hover {
+  background-color: #1e6889;
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.hero .hero-btn span {
+  margin-right: 10px;
+  color: #fff;
+}
+
+.hero .hero-btn img {
+  width: 25px;
+  height: 25px;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: 530px;
+}
+
+/* Media Queries */
+/* For Tablet Devices */
+@media (max-width: 768px) {
+  .patient-home-page {
+    padding: 10px;
+  }
+
+  .hero {
+    padding: 0;
+    padding: 0;
+    height: 80vh;
+    flex-direction: column-reverse;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  .hero h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  .hero .hero-btn {
+    width: 60%;
+    font-size: 14px;
+    padding: 8px;
+    margin: 20px auto;
+  }
+
+  .hero-image img {
+    max-width: 80%;
+    height: auto;
+  }
+
+  .main-img {
+    margin: 0 80px;
+  }
+}
+
+/* For Mobile Devices */
+@media (max-width: 480px) {
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero p {
+    font-size: 0.85rem;
+  }
+
+  .hero .hero-btn {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+
